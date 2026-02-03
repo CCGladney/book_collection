@@ -101,3 +101,9 @@ production:
     <<: *primary_production
     database: test_app_production_cable
     migrations_paths: db/cable_migrate
+  development:
+    adapter: postgresql
+    database: test_app_dev
+    username: test_app
+    password: test_password
+    host: localhost
